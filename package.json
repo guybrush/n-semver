@@ -1,0 +1,12 @@
+{
+  "name": "n-semver",
+  "version": "0.0.0",
+  "description": "semver for n",
+  "main": "n-semver.js",
+  "dependencies" : { "semver" : "1.0.14" },
+  "scripts": {
+    "test": "node test/*.js"
+  },
+  "author": "Patrick Pfeiffer <patrick@buzzle.at>",
+  "license": "MIT"
+}
