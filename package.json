@@ -2,6 +2,7 @@
   "name": "n-semver",
   "version": "0.0.0",
   "description": "semver for n",
+  "bin": "bin/cli.js",
   "main": "n-semver.js",
   "dependencies" : { "semver" : "1.0.14" },
   "scripts": {

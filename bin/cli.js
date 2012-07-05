@@ -7,10 +7,10 @@ var cp = require('child_process')
 var semver = require('semver')
 var range = process.argv[2] === undefined ? '0.6' : process.argv[2]
 
-nSemver(range, function(err, best){
+nSemver(range, function(err, data){
   if (err) {
     console.error(err)
     return process.exit(1)
   }
-  process.stdout.write(best)
+  process.stdout.write(data.maxSatisfying)
 })
