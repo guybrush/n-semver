@@ -9,7 +9,7 @@ in the shell:
       n-semver <version-range> [args ...]
       n-semver-version <version-range>
 
-  Example: execute foo.js with the node-version which max-satisfyies '~0.6'
+  Example: execute foo.js with the node-version which max-satisfies '~0.6'
 
       n-semver ~0.6 foo.js -p 3000
 
