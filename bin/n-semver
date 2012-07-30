@@ -1,0 +1,34 @@
+#!/usr/bin/env sh
+
+display_help() {
+  cat <<-help
+
+  Usage:
+
+      n-semver <version-range> [args ...]
+      n-semver-version <version-range>
+
+  Example: execute foo.js with the node-version which max-satisfyies '~0.6'
+
+      n-semver ~0.6 foo.js -p 3000
+      
+  Example: print max-satisfying installed node-version for '~0.6'
+
+      n-semver-version ~0.6
+
+help
+  exit 0
+}
+
+if test $# -eq 0; then
+  display_help
+else
+  local dir=$(dirname $0)
+  local cmd="$dir/n-semver-version $1"
+  shift
+  if test $# -eq 0; then
+    display_help
+  else
+    n as `$cmd` $@
+  fi
+fi

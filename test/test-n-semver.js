@@ -13,7 +13,7 @@ ns('*',function(err,dataA){
 
 function done(err) {
   if (err) console.error('error:',err) && process.exit(1)
-  console.log('all done without error')
+  console.log('all tests passed')
   process.exit()
 }
 
