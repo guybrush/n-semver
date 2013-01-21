@@ -1,5 +1,7 @@
 # n-semver - [semver] for [n]
 
+*note: this is only compatible/tested with n@0.7.3 for now*
+
 in node: `require('n-semver')('<range>',function(err,data){console.log(data.versions,data.maxSatisfying)})`
 
 in the shell:
