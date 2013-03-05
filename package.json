@@ -1,6 +1,6 @@
 {
   "name": "n-semver",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "semver for n",
   "bin": {
     "n-semver": "bin/n-semver.sh",
