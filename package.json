@@ -3,8 +3,9 @@
   "version": "0.0.2",
   "description": "semver for n",
   "bin": {
-    "n-semver": "bin/n-semver",
-    "n-semver-version": "bin/n-semver-version"
+    "n-semver": "bin/n-semver.sh",
+    "n-semver-version": "bin/n-semver-version.js",
+    "n-semver-npm": "bin/n-semver-npm.sh"
   },
   "main": "n-semver.js",
   "dependencies": {
