@@ -8,5 +8,5 @@ else
   binRegex='(.*)\/node$'
   [[ $nodeBin =~ $binRegex ]]
   npmBin=${BASH_REMATCH[1]}"/npm"
-  $npmBin $@
+  n as $version $npmBin $@
 fi
