@@ -1,12 +1,12 @@
+#!/usr/bin/env sh
+
 if test $# -eq 0; then
   n-semver
 else
   cmdVersion="n-semver-version $1"
-  shift
   version=`$cmdVersion`
   nodeBin=`n which $version`
-  binRegex='(.*)\/node$'
-  [[ $nodeBin =~ $binRegex ]]
-  npmBin=${BASH_REMATCH[1]}"/npm"
+  npmBin=`echo $nodeBin | sed -e 's/\/node$/\/npm/'`
+  shift
   n as $version $npmBin $@
 fi
