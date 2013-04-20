@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/guybrush/n"
+    "url": "https://github.com/guybrush/n-semver"
   },
   "author": "Patrick Pfeiffer <patrick@buzzle.at>",
   "license": "MIT"
